@@ -234,7 +234,9 @@ export class Common extends GridLayout {
     if (this.disabled == "false") this.disabled = false;
 
     if (this.item_template == null)
-      this.item_template = `<Label text="{{ ${
+      this.item_template = `<Label 
+style='font-size:18; padding:5;'
+text="{{ ${
         this._search_param
         } }}" textWrap="true" />`;
 
